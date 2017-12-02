@@ -1,0 +1,1 @@
+puts File.readlines('input.txt').collect{|k| k.split('	').map(&:to_i)}.collect{|k| k.permutation(2).map{|e| e[0]%e[1] == 0 ? e[0]/e[1] : 0}}.flatten.inject(:+)
