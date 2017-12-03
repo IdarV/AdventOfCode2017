@@ -23,7 +23,6 @@ until found
   if squared >= input
     corners = [squared]
     3.times { corners.push(corners.last - odd + 1) }
-    puts "corners: #{corners}"
 
     closest_corner = smallest_dif(input, corners)
     distance_to_corner = (closest_corner - input).abs
@@ -36,5 +35,4 @@ end
 
 # This is heavily inpired by https://www.reddit.com/r/adventofcode/comments/7h7ufl/2017_day_3_solutions/dqoymtk/
 # I think it will fail for ~ of numbers because of the way I calculate the distance between corners (i.e.) this
-# calculates 10 to be closest to 13, even though 25 is closer.
-# This needs to be checked in smallest_diff
+# calculates 10 to be closest to 13, even though 25 is closer. This needs to be checked in smallest_diff
