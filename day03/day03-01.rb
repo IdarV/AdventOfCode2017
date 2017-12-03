@@ -34,5 +34,5 @@ end
 
 
 # This is heavily inpired by https://www.reddit.com/r/adventofcode/comments/7h7ufl/2017_day_3_solutions/dqoymtk/
-# I think it will fail for ~ of numbers because of the way I calculate the distance between corners (i.e.) this
-# calculates 10 to be closest to 13, even though 25 is closer. This needs to be checked in smallest_diff
+# I think it will fail for ~12% of numbers because of the way I calculate the distance between corners. (i.e.) I
+# calculate 10 to be closest to 13, even though 25 is closer. This needs to be checked in smallest_diff
